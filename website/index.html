@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102a43">
+  <meta name="description" content="An experimental child behavioral questionnaire and audio visualization research prototype.">
+  <title>ASD Risk Detector | Child Development Research</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="announcement"> <span class="announcement-sep">·</span> Not a diagnostic tool</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="ASD Risk Detector home">
+      <span class="brand-mark"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 6v28M6 20h28" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><circle cx="20" cy="20" r="16" fill="none" stroke="currentColor" stroke-width="2"/></svg></span>
+      <span><strong>ASD Risk Detector</strong><small>Child development research</small></span>
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#how-it-works">How it works</a>
+      <a href="#screening">Questionnaire</a>
+      <a href="#audio">Audio lab</a>
+    </nav>
+    <a class="button button-small button-dark header-cta" href="#screening">Start questionnaire <span aria-hidden="true">↗</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> AI-assisted research experience</div>
+        <h1>Understand the signals.<br><span>Support every child.</span></h1>
+        <p class="hero-lede">Explore a research prototype for organizing behavioral questionnaire responses and visualizing child audio patterns in one clear, accessible workspace.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#screening">Begin questionnaire <span aria-hidden="true">→</span></a>
+          <a class="button button-outline" href="#how-it-works">Explore the process</a>
+        </div>
+        <div class="hero-note"><span class="shield-icon">✓</span><span>Research use only. It does not diagnose autism or replace a professional assessment.</span></div>
+      </div>
+      <div class="hero-visual" aria-label="Illustration of an audio analysis dashboard">
+        <div class="visual-glow"></div>
+        <div class="visual-card visual-card-main">
+          <div class="visual-top"><span class="visual-label"><span class="live-dot"></span> AUDIO WORKSPACE</span><span class="visual-more">•••</span></div>
+          <div class="sound-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M7 20h6l7-7v22l-7-7H7zM29 18a9 9 0 0 1 0 12M33 13a16 16 0 0 1 0 22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="visual-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="visual-meta"><span>Audio visualization</span><span>Live-ready interface</span></div>
+          <div class="visual-spectrum" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+        <div class="floating-card floating-card-top"><span class="float-icon">✳</span><span><strong>Thoughtful by design</strong><small>Clear, calm interactions</small></span></div>
+        <div class="floating-card floating-card-bottom"><span class="float-check">✓</span><span><strong>Privacy first</strong><small>Audio is not saved by the API</small></span></div>
+        <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+      </div>
+    </section>
+
+    <section class="trust-strip section-wrap" aria-label="Product principles">
+      <div><span class="strip-icon">◎</span><span><strong>Clear process</strong><small>Step-by-step questionnaire</small></span></div>
+      <div><span class="strip-icon">⌁</span><span><strong>Audio visualization</strong><small>Waveform and Mel-spectrogram</small></span></div>
+      <div><span class="strip-icon">♧</span><span><strong>Research-minded</strong><small>Honest limits and notices</small></span></div>
+    </section>
+
+    <section class="section-wrap process-section" id="how-it-works">
+      <div class="section-heading">
+        <div class="eyebrow">A guided experience</div>
+        <h2>Simple steps. <span>Clear information.</span></h2>
+        <p>Designed to make data entry and audio exploration easy to follow.</p>
+      </div>
+      <div class="process-grid">
+        <article class="process-card"><div class="process-number">01</div><div class="process-symbol symbol-blue">☷</div><h3>Answer questions</h3><p>Record responses to ten simplified behavioral prompts and enter basic child details.</p></article>
+        <article class="process-card"><div class="process-number">02</div><div class="process-symbol symbol-green">⌁</div><h3>Explore audio</h3><p>Record a short sample or upload a WAV file to view its waveform and Mel-spectrogram.</p></article>
+        <article class="process-card"><div class="process-number">03</div><div class="process-symbol symbol-lilac">✧</div><h3>Review the output</h3><p>See the existing behavioral model's experimental output with clear context and limitations.</p></article>
+      </div>
+    </section>
+
+    <section class="screening-section" id="screening">
+      <div class="section-wrap">
+        <div class="section-heading section-heading-left">
+          <div class="eyebrow">01 / Behavioral questionnaire</div>
+          <h2>Start with what <span>you observe.</span></h2>
+          <p>Complete the form below. All questions are required so the model receives a complete set of inputs.</p>
+        </div>
+        <div class="screening-layout">
+          <aside class="side-note">
+            <div class="side-note-icon">i</div><h3>Before you begin</h3>
+            <p>This demonstration uses simplified questions. The mapping has not been validated as a clinical questionnaire.</p>
+            <ul><li>No diagnosis is provided.</li><li>Do not use results for treatment decisions.</li><li>For concerns, consult a qualified professional.</li></ul>
+            <div class="mini-progress"><div class="mini-progress-head"><span>Form progress</span><strong id="progressText">0%</strong></div><div class="progress-track"><div id="progressBar"></div></div></div>
+          </aside>
+          <div class="form-card">
+            <form id="screeningForm">
+              <div class="form-section">
+                <div class="form-section-title"><span class="section-count">1</span><div><h3>Child details</h3><p>A few details help format the model input.</p></div></div>
+                <div class="field-grid">
+                  <label class="field"><span>Age in years</span><input id="age" name="age" type="number" min="1" max="17" value="3" required><small>Age must be between 1 and 17.</small></label>
+                  <label class="field"><span>Gender</span><select id="gender" name="gender" required><option value="m">Male</option><option value="f">Female</option></select></label>
+                  <label class="field"><span>Ethnicity</span><select id="ethnicity" required><option>White-European</option><option>Asian</option><option>Middle Eastern</option><option>South Asian</option><option>Black</option><option>Hispanic</option><option>Others</option><option>?</option></select></label>
+                  <label class="field"><span>Country of residence</span><input id="country" type="text" value="India" maxlength="80" required></label>
+                  <label class="field"><span>Born with jaundice?</span><select id="jaundice" required><option value="no">No</option><option value="yes">Yes</option></select></label>
+                  <label class="field"><span>Family history of autism?</span><select id="autism" required><option value="no">No</option><option value="yes">Yes</option></select></label>
+                  <label class="field field-full"><span>Your relationship to the child</span><select id="relation" required><option>Parent</option><option>Relative</option><option>Health care professional</option><option>Self</option><option>Others</option><option>?</option></select></label>
+                </div>
+              </div>
+              <div class="form-section">
+                <div class="form-section-title"><span class="section-count">2</span><div><h3>Behavioral observations</h3><p>Choose the answer that best reflects your observation.</p></div></div>
+                <div id="questions" class="questions-list"></div>
+                <div class="form-footnote"><span>ⓘ</span><p>These are simplified demonstration prompts, not official validated screening questions. Yes is currently mapped to 1 and No to 0 for model input.</p></div>
+              </div>
+              <div class="form-section">
+                <div class="form-section-title"><span class="section-count">3</span><div><h3>Additional context</h3><p>These fields are used by the existing model pipeline.</p></div></div>
+                <div class="field-grid">
+                  <label class="field"><span>Previously used a screening app?</span><select id="usedApp" required><option value="no">No</option><option value="yes">Yes</option></select></label>
+                  <label class="field"><span>Age group</span><select id="ageDesc" required><option>4-11 years</option><option>12-17 years</option></select></label>
+                </div>
+              </div>
+              <button class="button button-primary submit-button" id="submitButton" type="submit">Generate experimental output <span aria-hidden="true">→</span></button>
+              <p class="form-privacy">Your answers are sent to this app's backend only to calculate the model output. This prototype does not save questionnaire submissions.</p>
+            </form>
+            <div class="result-panel" id="resultPanel" hidden aria-live="polite">
+              <div class="result-top"><div><div class="eyebrow">Model response</div><h3>Experimental output</h3></div><span class="result-status" id="resultStatus">Complete</span></div>
+              <div class="result-score"><strong id="resultPercent">—</strong><span>model output<br><small>not a diagnosis</small></span></div>
+              <div class="result-meter"><div id="resultMeter"></div></div>
+              <p id="resultFlag" class="result-flag"></p>
+              <div class="result-warning"><strong>Important context</strong><p id="resultNotice">This output is experimental and has not been validated for clinical use.</p></div>
+              <button class="button button-outline" id="editAnswers" type="button">Review answers</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="audio-section section-wrap" id="audio">
+      <div class="section-heading">
+        <div class="eyebrow">02 / Audio lab</div>
+        <h2>See sound in a <span>new way.</span></h2>
+        <p>Record using your microphone or upload a WAV file to inspect its audio patterns.</p>
+      </div>
+      <div class="audio-layout">
+        <div class="audio-control-card">
+          <div class="audio-card-heading"><span class="audio-heading-icon">⌁</span><div><h3>Audio input</h3><p>WAV format supported for uploads</p></div></div>
+          <div class="record-panel">
+            <div class="record-circle" id="recordCircle"><span class="record-mic">🎙</span></div>
+            <h4 id="recordTitle">Record a short sample</h4><p id="recordDescription">Allow microphone access when your browser asks.</p>
+            <div class="record-actions"><button class="button button-primary" id="recordButton" type="button">Start recording</button><button class="button button-outline" id="stopButton" type="button" disabled>Stop</button></div>
+            <p class="record-time" id="recordTime">Maximum recording: 15 seconds</p>
+          </div>
+          <div class="upload-divider"><span>or upload a file</span></div>
+          <label class="upload-drop" for="audioFile"><span class="upload-icon">↑</span><strong>Choose a WAV recording</strong><small>Maximum file size: 15 MB</small><input id="audioFile" type="file" accept=".wav,audio/wav,audio/x-wav"></label>
+          <div class="selected-file" id="selectedFile" hidden></div>
+          <audio id="audioPlayer" controls hidden></audio>
+          <button class="button button-primary analyze-button" id="analyzeButton" type="button" disabled>Analyze audio visualization <span>→</span></button>
+          <p class="audio-privacy">Audio is processed in memory for visualization and is not saved by this endpoint. Avoid recording identifying or sensitive information.</p>
+        </div>
+        <div class="audio-results-card">
+          <div class="audio-results-head"><div><h3>Audio visualization</h3><p id="audioStatus">Waiting for a recording</p></div><span class="visual-badge">LIVE WORKSPACE</span></div>
+          <div class="empty-visual" id="emptyVisual"><div class="empty-visual-icon">〰</div><strong>Your audio visuals will appear here</strong><p>Record or upload a WAV file, then select Analyze audio visualization.</p></div>
+          <div id="audioOutput" hidden>
+            <div class="audio-stats"><div><small>Duration</small><strong id="audioDuration">—</strong></div><div><small>Sample rate</small><strong id="audioSampleRate">—</strong></div><div><small>Samples</small><strong id="audioSamples">—</strong></div></div>
+            <div class="chart-block"><div class="chart-title"><strong>Waveform</strong><span>Amplitude over time</span></div><canvas id="waveformCanvas" height="115"></canvas></div>
+            <div class="chart-block"><div class="chart-title"><strong>Mel-spectrogram</strong><span>Frequency energy over time</span></div><canvas id="melCanvas" height="220"></canvas><div class="spectrum-scale"><span>Lower frequency</span><span>Higher frequency</span></div></div>
+            <div class="audio-notice" id="audioNotice"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing-section"><div class="section-wrap closing-inner"><div><div class="eyebrow">Built for responsible exploration</div><h2>Technology can support understanding.<br><span>People provide the care.</span></h2></div><a class="button button-light" href="#screening">Return to questionnaire ↑</a></div></section>
+  </main>
+
+  <footer class="site-footer"><a class="brand footer-brand" href="#home"><span class="brand-mark"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 6v28M6 20h28" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><circle cx="20" cy="20" r="16" fill="none" stroke="currentColor" stroke-width="2"/></svg></span><span><strong>ASD Risk Detector</strong><small>Child development research</small></span></a><p>Experimental research prototype. Not for diagnosis, treatment, or clinical decisions.</p><span>© <span id="year"></span> ASD Risk Detector</span></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="/static/app.js"></script>
+</body>
+</html>
